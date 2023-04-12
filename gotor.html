@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="goter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<script type="text/javascript" src="passGo.js"></script>
+  </head>
+  <body>
+    <div class="green">
+      <!-- input だと、valueでのテキスト指定になってしまう。
+        ==> class 指定でフォントファミリーを変更すると、わにが文字化けする。
+
+        input 以外でボタンっぽくHTMLを作る。
+
+        上記の手段として、divでボタンぽいパーツをつくるのが有効
+       -->
+       <input id = "number" type = "number" value="" min="0" max="150" class="input" placeholder="   INPUT WANI">
+       <div id="button" class="dummy-button">
+        <div class="pyonpyon">🐊  🐊</div>Wani-Wani Park-RUSH </div>
+      <div id ="reset" class="dummy-button">
+        RESET
+      </div>       <!-- <input id = "button" type = "button" value="🐊RUSH🐊"><br> -->
+        
+    </div>
+    <div class="blue">
+      <span class="pyonpyon" id = "output"></span>
+    </div>
+    <script type="text/javascript" src="goter.js"></script>
+    <script type="text/javascript" src="JANKEN.js"></script>
+  </body>
+</html>
